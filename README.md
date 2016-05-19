@@ -2,6 +2,8 @@
 
 CSE Final - Prime factor love tester
 
+##Please test your function with test input before pushing!
+
 1.  (Steve) Love test master - writes main function.
 	Calls: name_to_number, Factor, Compare Factors, IRG
 In: List of 2 names
