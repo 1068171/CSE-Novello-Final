@@ -93,3 +93,13 @@ def parse_to_number(achyuth):
     return final
     print final
 >>>>>>> e5bdb19415399a995d63bacf0609c3b2d12e4da7
+
+#JG Changes
+def list_of_pairs (number):
+    a_list = []
+    list_of_factors = List_prime_factors (number)
+    for factor in list_of_factors:
+        multiplicity = Find_Multiplicity (factor, number)
+        a_list.append([ factor, multiplicity ])
+    return a_list
+print list_of_pairs(number)    
