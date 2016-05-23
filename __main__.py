@@ -3,6 +3,7 @@
 #Let's write delicious code. がんばってくらさい！
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ''' DEEVY'S FUNCTION: compare_factors(list1, list2)'''
 def compare_factors(list1, list2):
@@ -103,3 +104,14 @@ def list_of_pairs (number):
         a_list.append([ factor, multiplicity ])
     return a_list
 print list_of_pairs(number)    
+=======
+#Alec Battisti Multiplicity Function
+def multiplicity(f,n):
+    mult = 0
+    while n%f == 0:
+        mult+=1
+        n = n/f
+    print "Multiplicity: "+str(mult)
+    return mult
+    
+>>>>>>> 6d84022b67553bd52f298ea7891b0fd5625dd54c
