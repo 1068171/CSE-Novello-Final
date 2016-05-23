@@ -11,4 +11,4 @@ def list_of_pairs (number):
         multiplicity = Find_Multiplicity (factor, number)
         a_list.append([ factor, multiplicity ])
     return a_list
-print list_of_pairs()    
+print list_of_pairs(number)    
