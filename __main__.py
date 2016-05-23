@@ -2,6 +2,7 @@
 #Before you push your additions to the code, make sure they exactly fit the parameters described in the project!
 #Let's write delicious code. がんばってくらさい！
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -219,3 +220,12 @@ def loveTest(name1, name2)
     print InterestingResponse1
 
 >>>>>>> 3f2a63dd2f7eac1198d8ce55ef1901ce21703ffb
+=======
+
+#John Philip Earl Allosa ( ͡° ͜ʖ ͡°) 5/19/16
+def Name_to_number(theName):
+   parsedName = Name_parse(theName)
+   genNumber = Parse_to_number(parsedName)
+   return genNumber  
+   
+>>>>>>> 267dd33a5518fab1ae562504e6b0578dac659723
