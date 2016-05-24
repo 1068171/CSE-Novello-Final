@@ -3,6 +3,7 @@
 #Let's write delicious code. がんばってくらさい！
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -342,3 +343,32 @@ def Name_to_number(theName):
    return genNumber  
    
 >>>>>>> 267dd33a5518fab1ae562504e6b0578dac659723
+=======
+
+
+# Abirami
+import math
+
+def list_prime_factors(num):
+    n = int(num)
+    prime = []
+    k=1
+    if n%2==0:
+        prime.append(2)
+        
+    flag = 0
+    while (2*k+2)**2 < n:
+        if n%(2*k+1)==0:
+            for p in prime:
+                if (2*k+1)%p ==0:
+                    flag = 1
+            if flag ==+ 0:
+                prime.append(2*k+1)
+        flag = 0
+        k=k+1
+    if len(prime)== 0:
+        prime.append(n)
+        
+    print prime
+    return prime
+>>>>>>> ec9157b8b8b43e78a21fb6fdf33074985999a509
