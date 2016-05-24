@@ -1,14 +1,6 @@
 # -*- coding: utf-8 -*-
 #Before you push your additions to the code, make sure they exactly fit the parameters described in the project!
 #Let's write delicious code. がんばってくらさい！
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 ''' DEEVY'S FUNCTION: compare_factors(list1, list2)'''
 def compare_factors(list1, list2):
@@ -75,11 +67,7 @@ def compare_factors(list1, list2):
 
     print output
     return output
-=======
-=======
 
-
->>>>>>> dfe2abc896b1c6cfb4fad2529f87133861441a24
 '''ACHYUTH'S FUNCTION: parse_to_number(input)'''
 
 def alpha_numeric_dictionary(a):
@@ -210,7 +198,7 @@ def parse_to_number(achyuth):
 #returns and prints  
     return final
     print final
->>>>>>> e5bdb19415399a995d63bacf0609c3b2d12e4da7
+
 
 #JG Changes
 def list_of_pairs (number):
@@ -221,7 +209,7 @@ def list_of_pairs (number):
         a_list.append([ factor, multiplicity ])
     return a_list
 print list_of_pairs(number)    
-=======
+
 #Alec Battisti Multiplicity Function
 def multiplicity(f,n):
     mult = 0
@@ -231,8 +219,7 @@ def multiplicity(f,n):
     print "Multiplicity: "+str(mult)
     return mult
     
->>>>>>> 6d84022b67553bd52f298ea7891b0fd5625dd54c
-=======
+
 #luke's code:
 percent = 5
 n = 0
@@ -313,8 +300,7 @@ def sentence_spitter(n):
 	return percent + "%!!! -- " + message21
     
 print sentence_spitter(1)
->>>>>>> 8008034963620741b3f18fe559eb7445c7c222f6
-=======
+
 print "Enter in loveTest in the commandline followed by the two names in parentheses with commas in between"
 def loveTest(name1, name2)
     number1 = name_to_number(name1)
@@ -333,17 +319,12 @@ def loveTest(name1, name2)
     InterestingResponse1 = InterestingResponseFunction(comparedFactor1)
     print InterestingResponse1
 
->>>>>>> 3f2a63dd2f7eac1198d8ce55ef1901ce21703ffb
-=======
 
 #John Philip Earl Allosa ( ͡° ͜ʖ ͡°) 5/19/16
 def Name_to_number(theName):
    parsedName = Name_parse(theName)
    genNumber = Parse_to_number(parsedName)
    return genNumber  
-   
->>>>>>> 267dd33a5518fab1ae562504e6b0578dac659723
-=======
 
 
 # Abirami
@@ -371,4 +352,3 @@ def list_prime_factors(num):
         
     print prime
     return prime
->>>>>>> ec9157b8b8b43e78a21fb6fdf33074985999a509
