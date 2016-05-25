@@ -4,6 +4,8 @@
 
 ''' DEEVY'S FUNCTION: compare_factors(list1, list2)'''
 def compare_factors(list1, list2):
+    print "DvList1 " + str(list1)
+    print "DvList2 " + str(list2)
     length_1 = len(list1)
     length_2 = len(list2)
 
@@ -62,7 +64,7 @@ def compare_factors(list1, list2):
         total_nums += pair[1]
 
     output = float(final_value) / float(
-        total_nums)  # Divides the number of common numbers by the total number of numbers
+        total_nums/2)  # Divides the number of common numbers by the total number of numbers
     output = round(output, 2)
 
     print output
@@ -201,14 +203,15 @@ def parse_to_number(achyuth):
 
 
 #JG Changes
-def list_of_pairs (number):
+def list_of_pairs(number):
     a_list = []
-    list_of_factors = List_prime_factors (number)
+    list_of_factors = list_prime_factors(number)
+    print len(list_of_factors)
     for factor in list_of_factors:
-        multiplicity = Find_Multiplicity (factor, number)
-        a_list.append([ factor, multiplicity ])
+        multipli = multiplicity(factor, number)
+        a_list.append([ factor, multipli ])
+    print a_list
     return a_list
-print list_of_pairs(number)    
 
 #Alec Battisti Multiplicity Function
 def multiplicity(f,n):
@@ -298,32 +301,19 @@ def sentence_spitter(n):
 	return percent + "% match!! -- " + message20
     if n == 1.0:
 	return percent + "%!!! -- " + message21
-    
-print sentence_spitter(1)
 
-print "Enter in loveTest in the commandline followed by the two names in parentheses with commas in between"
-def loveTest(name1, name2)
-    number1 = name_to_number(name1)
-    number2 = name_to_number(name2)
-    try:
-        number1 = int(number1)
-        number2 = int(number2)
-    except:
-        print("Error with name_to_number function. Attempted to make the output of the function into an integer but failed")
-    factor1 = factor(number1)
-    factor2 = factor(number2)
-    try:
-        comparedFactor1 = compare_factor(factor1, factor2)
-    except:
-        print("Error in comparedFactor1 function")
-    InterestingResponse1 = InterestingResponseFunction(comparedFactor1)
-    print InterestingResponse1
 
+
+def name_parse(name):
+    retList = []
+    for index in range(len(name)):
+        retList.append((name[index], index + 1))
+    return retList
 
 #John Philip Earl Allosa ( ͡° ͜ʖ ͡°) 5/19/16
-def Name_to_number(theName):
-   parsedName = Name_parse(theName)
-   genNumber = Parse_to_number(parsedName)
+def name_to_number(theName):
+   parsedName = name_parse(theName)
+   genNumber = parse_to_number(parsedName)
    return genNumber  
 
 
@@ -353,8 +343,8 @@ def list_prime_factors(num):
     print prime
     return prime
 
-print "Enter in loveTest in the commandline followed by the two names in parentheses with commas in between"
-def loveTest(name1, name2)
+print "Your names please"
+def loveTest(name1, name2):
     number1 = name_to_number(name1)
     number2 = name_to_number(name2)
     try:
@@ -362,11 +352,16 @@ def loveTest(name1, name2)
         number2 = int(number2)
     except:
         print("Error with name_to_number function. Attempted to make the output of the function into an integer but failed")
-    factor1 = factor(number1)
-    factor2 = factor(number2)
+    factor1 = list_of_pairs(number1)
+    factor2 = list_of_pairs(number2)
     try:
-        comparedFactor1 = compare_factor(factor1, factor2)
+        comparedFactor1 = compare_factors(factor1, factor2)
     except:
         print("Error in comparedFactor1 function")
-    InterestingResponse1 = InterestingResponseFunction(comparedFactor1)
+    InterestingResponse1 = sentence_spitter(comparedFactor1)
     print InterestingResponse1
+
+person1 = raw_input("First name: ")
+person2 = raw_input("Second name: ")
+
+loveTest(person1, person2)
